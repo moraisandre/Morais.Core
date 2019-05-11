@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}</ProjectGuid>
+    <ProjectGuid>{961A98F9-B10C-47B2-BD0E-BDC073D9CF60}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Morais.Core.Model</RootNamespace>
-    <AssemblyName>Morais.Core.Model</AssemblyName>
+    <RootNamespace>Morais.Core.Service</RootNamespace>
+    <AssemblyName>Morais.Core.Service</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -90,7 +90,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente\Cliente.cs" />
+    <Compile Include="Cliente\ClienteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +103,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Morais.Core.Util\Morais.Core.Util.csproj">
-      <Project>{97DE9746-39AF-4F75-83B4-720986E44176}</Project>
-      <Name>Morais.Core.Util</Name>
+    <ProjectReference Include="..\Morais.Core.Model\Morais.Core.Model.csproj">
+      <Project>{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}</Project>
+      <Name>Morais.Core.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -121,9 +121,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54563</DevelopmentServerPort>
+          <DevelopmentServerPort>59654</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54563/</IISUrl>
+          <IISUrl>http://localhost:59654/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

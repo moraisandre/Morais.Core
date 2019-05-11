@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,6 +11,7 @@ namespace Morais.Core
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+
 
             // Web API routes
             config.MapHttpAttributeRoutes();
