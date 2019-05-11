@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morais.Core", "Morais.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morais.Core.Tests", "Morais.Core.Tests\Morais.Core.Tests.csproj", "{DD806F30-25C6-4F2B-92F6-D9ABA3870DF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morais.Core.Model", "Morais.Core.Model\Morais.Core.Model.csproj", "{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morais.Core.Util", "Morais.Core.Util\Morais.Core.Util.csproj", "{97DE9746-39AF-4F75-83B4-720986E44176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{DD806F30-25C6-4F2B-92F6-D9ABA3870DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD806F30-25C6-4F2B-92F6-D9ABA3870DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD806F30-25C6-4F2B-92F6-D9ABA3870DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DE9746-39AF-4F75-83B4-720986E44176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DE9746-39AF-4F75-83B4-720986E44176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DE9746-39AF-4F75-83B4-720986E44176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DE9746-39AF-4F75-83B4-720986E44176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
