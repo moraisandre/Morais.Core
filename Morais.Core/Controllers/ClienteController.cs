@@ -26,9 +26,9 @@ namespace Morais.Core.Controllers
 
         [HttpGet]
         [Route("clientes/{id}")]
-        public string Get(int id)
+        public ClienteDTO Get(string id)
         {
-            return "value";
+            return _service.ObterCliente(id);
         }
 
         [HttpPost]

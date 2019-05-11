@@ -21,5 +21,10 @@ namespace Morais.Core.Service.Cliente
         {
             return _clientes.Find(cliente => true).ToList();
         }
+
+        public ClienteDTO ObterCliente(string id)
+        {
+            return _clientes.Find(cliente => cliente.Id == id).FirstOrDefault();
+        }
     }
 }
