@@ -107,6 +107,10 @@
       <Project>{7B5885A8-3C9D-470A-BDD4-8E9AD2E828DF}</Project>
       <Name>Morais.Core.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Morais.Core.Util\Morais.Core.Util.csproj">
+      <Project>{97DE9746-39AF-4F75-83B4-720986E44176}</Project>
+      <Name>Morais.Core.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

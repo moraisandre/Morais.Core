@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Enums\TipoPessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constantes\ConstantesSistema.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

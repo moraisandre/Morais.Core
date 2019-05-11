@@ -1,5 +1,6 @@
 ﻿using MongoDB.Driver;
 using Morais.Core.Model.Cliente;
+using Morais.Core.Util.Constantes;
 using System.Collections.Generic;
 
 namespace Morais.Core.Service.Cliente
@@ -10,8 +11,8 @@ namespace Morais.Core.Service.Cliente
 
         public ClienteService()
         {
-            var client = new MongoClient("mongodb+srv://admin:admin@moraiscluster-xdmnl.mongodb.net/moraisdb?connect=replicaSet");
-            var database = client.GetDatabase("moraisdb");
+            var client = new MongoClient(ConstantesSistema.MONGODBCONEXAO);
+            var database = client.GetDatabase(ConstantesSistema.MONGODBDATABASE);
 
             _clientes = database.GetCollection<ClienteDTO>("clientes");
         }
