@@ -47,8 +47,9 @@ namespace Morais.Core.Controllers
 
         [HttpDelete]
         [Route("clientes/{id}")]
-        public void Delete(int id)
+        public void Delete(string id)
         {
+            _service.DeletarCliente(id);
         }
     }
 }

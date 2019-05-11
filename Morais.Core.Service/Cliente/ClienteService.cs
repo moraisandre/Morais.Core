@@ -37,5 +37,10 @@ namespace Morais.Core.Service.Cliente
         {
             _clientes.ReplaceOne(c => c.Id == id, cliente);
         }
+
+        public void DeletarCliente(string id)
+        {
+            _clientes.DeleteOne(c => c.Id == id);
+        }
     }
 }
