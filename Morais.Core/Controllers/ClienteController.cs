@@ -40,8 +40,9 @@ namespace Morais.Core.Controllers
 
         [HttpPut]
         [Route("clientes/{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(string id, [FromBody]ClienteDTO cliente)
         {
+            _service.AlterarCliente(id, cliente);
         }
 
         [HttpDelete]

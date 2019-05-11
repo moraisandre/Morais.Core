@@ -32,5 +32,10 @@ namespace Morais.Core.Service.Cliente
             _clientes.InsertOne(cliente);
             return cliente;
         }
+
+        public void AlterarCliente(string id, ClienteDTO cliente)
+        {
+            _clientes.ReplaceOne(c => c.Id == id, cliente);
+        }
     }
 }
