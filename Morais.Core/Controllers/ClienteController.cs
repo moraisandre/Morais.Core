@@ -33,8 +33,9 @@ namespace Morais.Core.Controllers
 
         [HttpPost]
         [Route("clientes/")]
-        public void Post([FromBody]string value)
+        public ClienteDTO Post([FromBody]ClienteDTO cliente)
         {
+            return _service.CriarCliente(cliente);
         }
 
         [HttpPut]

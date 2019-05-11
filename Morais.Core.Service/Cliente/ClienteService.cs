@@ -26,5 +26,11 @@ namespace Morais.Core.Service.Cliente
         {
             return _clientes.Find(cliente => cliente.Id == id).FirstOrDefault();
         }
+
+        public ClienteDTO CriarCliente(ClienteDTO cliente)
+        {
+            _clientes.InsertOne(cliente);
+            return cliente;
+        }
     }
 }
