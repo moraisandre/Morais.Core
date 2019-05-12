@@ -1,13 +1,6 @@
-﻿using MongoDB.Bson;
-using MongoDB.Driver;
-using Morais.Core.Model.Cliente;
+﻿using Morais.Core.Model.Cliente;
 using Morais.Core.Service.Cliente;
-using Morais.Core.Util.Enums;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace Morais.Core.Controllers
@@ -19,6 +12,7 @@ namespace Morais.Core.Controllers
 
         [HttpGet]
         [Route("clientes/")]
+        [AllowAnonymous]
         public IEnumerable<ClienteDTO> Get()
         {
             return _service.ObterTodosClientes();
