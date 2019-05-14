@@ -12,6 +12,5 @@ namespace Morais.Core.Service.Cliente
         ClienteDTO CriarCliente(ClienteDTO cliente);
         void AlterarCliente(string id, ClienteDTO cliente);
         void DeletarCliente(string id);
-        bool Funciona(string palavra);
     }
 }

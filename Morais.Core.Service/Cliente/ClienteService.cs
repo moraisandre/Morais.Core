@@ -1,6 +1,7 @@
 ﻿using MongoDB.Driver;
 using Morais.Core.Model.Cliente;
 using Morais.Core.Util.Constantes;
+using System;
 using System.Collections.Generic;
 
 namespace Morais.Core.Service.Cliente
@@ -29,23 +30,24 @@ namespace Morais.Core.Service.Cliente
 
         public ClienteDTO CriarCliente(ClienteDTO cliente)
         {
+            var validator = ClienteValidator.Instancia.Validate(cliente);
+            if (!validator.IsValid) throw new InvalidOperationException(validator.Errors[0].ErrorMessage);
+
             _clientes.InsertOne(cliente);
             return cliente;
         }
 
         public void AlterarCliente(string id, ClienteDTO cliente)
         {
+            var validator = ClienteValidator.Instancia.Validate(cliente);
+            if (!validator.IsValid) throw new InvalidOperationException(validator.Errors[0].ErrorMessage);
+
             _clientes.ReplaceOne(c => c.Id == id, cliente);
         }
 
         public void DeletarCliente(string id)
         {
             _clientes.DeleteOne(c => c.Id == id);
-        }
-
-        public bool Funciona(string palavra)
-        {
-            return palavra.Length >= 2 ? true : false;
         }
     }
 }
