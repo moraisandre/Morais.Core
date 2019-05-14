@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Morais.Core.Service.Cliente
 {
-    public class ClienteService
+    public class ClienteService: IClienteService
     {
         private readonly IMongoCollection<ClienteDTO> _clientes;
 
@@ -41,6 +41,11 @@ namespace Morais.Core.Service.Cliente
         public void DeletarCliente(string id)
         {
             _clientes.DeleteOne(c => c.Id == id);
+        }
+
+        public bool Funciona(string palavra)
+        {
+            return palavra.Length >= 2 ? true : false;
         }
     }
 }
