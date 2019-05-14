@@ -2,6 +2,11 @@
 
 API feita em C# conectando no banco de dados <a href="https://www.mongodb.com/">MongoDB Atlas</a>. Veja também o <a href="https://github.com/moraisandre/Morais.CRUD.Web">front</a> feito em Angular que utiliza esse Core para cadastrar Clientes no sistema.
 
+## NuGets usados nesse projeto
+
+* FluentValidation
+* Swagger
+
 ## Modelo Cliente no MongoDB
 ```json
 {
